@@ -18,9 +18,10 @@ const MenuWrapper = styled.div`
 const NavBar = () => {
   return (
     <NavBarWrapper>
-      <MenuWrapper>{"메뉴1"}</MenuWrapper>
-      <MenuWrapper>{"메뉴2"}</MenuWrapper>
-      <MenuWrapper>{"메뉴3"}</MenuWrapper>
+      <MenuWrapper>{"Save"}</MenuWrapper>
+      <MenuWrapper>{"Share"}</MenuWrapper>
+      <MenuWrapper>{"Export"}</MenuWrapper>
+      <MenuWrapper>{"Import"}</MenuWrapper>
     </NavBarWrapper>
   );
 };
