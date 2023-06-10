@@ -72,7 +72,7 @@ const Sidebar = () => {
         />
       </InputWrapper>
       <ButtonWrapper>
-        <Button onClick={handleButtonClick}>확인</Button>
+        <Button onClick={handleButtonClick}>DB생성</Button>
         <Button onClick={handleResetClick}>초기화</Button>
       </ButtonWrapper>
       <Content contentValue={contentValue} />
