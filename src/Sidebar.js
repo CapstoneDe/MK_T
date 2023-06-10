@@ -44,9 +44,8 @@ const ButtonWrapper = styled.div`
   gap: 8px;
 `;
 
-const Sidebar = () => {
+const Sidebar = ({ setParentContentValue  }) => {
   const [inputValue, setInputValue] = useState('');
-  const [contentValue, setContentValue] = useState('');
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
@@ -54,12 +53,12 @@ const Sidebar = () => {
 
   const handleButtonClick = () => {
     // 버튼 클릭 시 동작할 로직 작성
-    setContentValue(inputValue);
+    setParentContentValue (inputValue);
   };
 
   const handleResetClick = () => {
     setInputValue('');
-    setContentValue('');
+    setParentContentValue('');
   };
 
   return (
@@ -75,7 +74,6 @@ const Sidebar = () => {
         <Button onClick={handleButtonClick}>DB생성</Button>
         <Button onClick={handleResetClick}>초기화</Button>
       </ButtonWrapper>
-      <Content contentValue={contentValue} />
       {/* 사이드바 내용 */}
     </SidebarWrapper>
   );

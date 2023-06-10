@@ -1,5 +1,5 @@
 // App.js
-import React from 'react';
+import React, { useState } from 'react';
 import NavBar from './NavBar';
 import Sidebar from './Sidebar';
 import Content from './Content';
@@ -17,12 +17,14 @@ const MainWrapper = styled.div`
 `;
 
 const App = () => {
+  const [contentValue, setContentValue] = useState('');
+
   return (
     <AppWrapper>
       <NavBar />
       <MainWrapper>
-        <Sidebar />
-        <Content />
+        <Sidebar setParentContentValue ={setContentValue} />
+        <Content contentValue={contentValue} />
       </MainWrapper>
     </AppWrapper>
   );
