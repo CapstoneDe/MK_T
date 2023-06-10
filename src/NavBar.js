@@ -9,10 +9,18 @@ const NavBarWrapper = styled.div`
   padding: 16px;
 `;
 
+const MenuWrapper = styled.div`
+  display: inline-block;
+  margin-right: 30px;
+  cursor: pointer;
+`;
+
 const NavBar = () => {
   return (
     <NavBarWrapper>
-      {"메뉴1"}
+      <MenuWrapper>{"메뉴1"}</MenuWrapper>
+      <MenuWrapper>{"메뉴2"}</MenuWrapper>
+      <MenuWrapper>{"메뉴3"}</MenuWrapper>
     </NavBarWrapper>
   );
 };
