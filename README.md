@@ -1,10 +1,9 @@
-# r3f-vite-starter
-A boilerplate to build R3F projects
+# Main-page
 
 ```
-yarn
-yarn dev
+npm
+npm run dev
 ```
 
+![image](https://github.com/CapstoneDe/MK_T/assets/95284588/35a4b672-9c86-40ee-bca2-ab5d0164c011)
 
-![image](https://user-images.githubusercontent.com/6551176/221732091-23ee52cb-4150-42fa-b998-43628d7a6b0d.png)
